@@ -1,4 +1,4 @@
-# config-merger-4ceaa4
+# config-merger-3fce33
 
 A Node.js config-merger utility.
 

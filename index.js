@@ -1,5 +1,5 @@
 'use strict';
-const APP_TAG = 'config-merger-4ceaa4';
+const APP_TAG = 'config-merger-3fce33';
 async function execute() {
   console.log(`[${APP_TAG}] Starting...`);
   const start = Date.now();
